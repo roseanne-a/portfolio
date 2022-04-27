@@ -21,12 +21,12 @@
 
 
 <body>
-<!-- "body" contains the information that is displayed on the website. -->
-<!-- semantic containers such as header, main, etc are used to help SEO and for organization -->
+    <!-- "body" contains the information that is displayed on the website. -->
+    <!-- semantic containers such as header, main, etc are used to help SEO and for organization -->
     <header class="cherry-blossoms" id="home">
-    <!-- "header" includes introductory elements like the page title, navigation, etc. -->
+        <!-- "header" includes introductory elements like the page title, navigation, etc. -->
         <div class="wrapper">
-        <!-- a wrapper class is used throughout the document to center the content. -->
+            <!-- a wrapper class is used throughout the document to center the content. -->
             <div class="page-title">
                 <h1>Rosey with Thinkful</h1>
                 <!-- h1 is only used once and contains the title of the page -->
@@ -47,21 +47,28 @@
     <main>
         <div class="wrapper">
             <article>
-                <section>
-                    <div class="all-sections section-intro" id="intro">
+                <div class="all-articles section-intro" id="intro">
+                    <h2>Introduction</h2>
+
+                    <section>
                         <!-- multiple classes can be used, all-sections contains shared declarations, id is used to identify the beginning of each section -->
-                        <h2>Introduction</h2>
                         <h3>Who am I?</h3>
                         <p>
                             My name is Roseanne Arcebido, but you can call me Rosey.
                         </p>
                         <h4>Three Facts</h4>
-                        <ol>
-                            <li>I was born in Miami.</li>
-                            <li>I lived in Japan for seven years.</li>
-                            <li>My favorite food is tacos.</li>
-                        </ol>
+                        <div class="myList1">
+                            <ol>
+                                <li>I was born in Miami.</li>
+                                <li>I lived in Japan for seven years.</li>
+                                <li>My favorite food is tacos.</li>
+                            </ol>
+                        </div>
                         <!-- ol stands for ordered list and uses numbers (or other organized elements) for list items (or li) -->
+                    </section>
+                    <hr>
+
+                    <section>
                         <h3>Where am I located?</h3>
                         <p>
                             I am located in Florida, close to Disney World!
@@ -77,20 +84,22 @@
                             Cinderella's castle.
                         </div>
                         <!-- the caption is smaller that regular text -->
-                    </div>
-                </section>
+                    </section>
+                </div>
+            </article>
+            <div class="break"></div>
 
-                <hr>
+            <article>
+                <div class="all-articles section-about" id="about">
+                    <h2>About</h2>
 
-                <section>
-                    <div class="all-sections section-about" id="about">
-                        <h2>About</h2>
+                    <section>
                         <h3>Development History</h3>
                         <p>
                             My journey with web development began a long time ago... I think a lot of people my age will
                             tell you this,
-                            but in fact, I started with HTML when <a
-                                href="https://en.wikipedia.org/wiki/Neopets" target="_blank">Neopets</a> was born!
+                            but in fact, I started with HTML when <a href="https://en.wikipedia.org/wiki/Neopets"
+                                target="_blank">Neopets</a> was born!
                             I was addicted to the site because it was fun to raise different monsters. If my memory
                             serves me right,
                             there was a profile page where you could design it as you please. They had a small guide,
@@ -107,38 +116,46 @@
                             a bit of PHP for a KPOP web forum that I help with. And now I am ready to immerse myself
                             completely!
                         </p>
+                    </section>
+                    <hr>
+                    <section>
                         <h3>Hobbies and Likes</h3>
                         <p>
                             I have 6 cats and love to play with them. I love video games, mainly Pokemon, and KPOP,
                             mainly BTOB!
                         </p>
                         <h4>My Cats</h4>
-                        <ul>
-                            <li>Moon</li>
-                            <li>Peeky</li>
-                            <li>Chopper</li>
-                            <li>Athena</li>
-                            <li>Sage</li>
-                            <li>Gandalf</li>
-                            <li>Precious</li>
-                        </ul>
+                        <div class="myList2">
+                            <ul>
+                                <li>Moon</li>
+                                <li>Peeky</li>
+                                <li>Chopper</li>
+                                <li>Athena</li>
+                                <li>Sage</li>
+                                <li>Gandalf</li>
+                                <li>Precious</li>
+                            </ul>
+                        </div>
                         <!-- this uses an unordered list where the order does not matter (I love all my cats equally!)-->
                         <img src="images/two_white_cats.jpg" alt="Two of Rosey's cats, who are white.">
                         <div class="caption">Two of my cats, Gandalf and Precious.</div>
-                    </div>
-                </section>
+                    </section>
+                </div>
+            </article>
+            <div class="break"></div>
+            <article>
+                <div class="all-articles section-contact" id="contact">
+                    <h2>Contact</h2>
 
-                <hr>
-
-                <section>
-                    <div class="all-sections section-contact" id="contact">
-                        <h2>Contact</h2>
+                    <section>
+                        <h3>Websites</h3>
                         <p><a href="https://github.com/roseanne-a" target="_blank">Github</a> | <a
                                 href="https://www.linkedin.com/in/rarcebido/" target="_blank">LinkedIn</a>
                         </p>
                         <!-- target blank is used to open links in a new page. It helps so the user doesn't leave your page! -->
-                    </div>
-                </section>
+
+                    </section>
+                </div>
             </article>
         </div>
     </main>

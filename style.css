@@ -78,7 +78,8 @@ h4 {
 
 ul, ol {
     list-style-position: inside; /* this places the bullets/numbers inside the container */
-    padding: 0px 0px 20px;
+    padding: 0px 0px 20px; 
+    text-align: left;
 }
 
 li {
@@ -87,7 +88,7 @@ li {
 }
 
 hr {
-    border: 0;
+    border: 0px;
     border-bottom: 3px dashed rgb(89, 29, 145);
 }
 
@@ -104,7 +105,6 @@ hr {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap; /* so each element is on a new line */
-
 }
 
 .page-title {
@@ -130,7 +130,7 @@ hr {
     margin: 20px;
 }
 
-.all-sections {
+.all-articles {
     text-align: center;
     line-height: 50px;
     margin: 30px;
@@ -163,4 +163,14 @@ hr {
 
 .credits, .credits a {
     font-size: 25px;
+}
+
+.myList1 {
+    display: block;
+    margin: 0px 0px 0px 225px;
+}
+
+.myList2 {
+    display: block;
+    margin: 0px 0px 0px 325px;
 }
