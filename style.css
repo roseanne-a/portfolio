@@ -1,0 +1,167 @@
+/* imports Google fonts that are not normally on a user's computer, copied from the Google fonts website */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@500&display=swap');
+
+/* Set ALL HTML elements with border-box sizing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #491C37;
+}
+
+/* same font for basic text */
+p, li {
+    font-family: 'Montserrat', 'Times New Roman', Times, serif;
+}
+
+p {
+    font-size: 25px;
+    padding: 20px;
+}
+
+a {
+    color: rgba(208, 234, 213, 0.8);
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* pseudo-classes to change each state of a link */
+a:visited {
+    color: rgba(0, 131, 26, 0.8);
+} 
+
+a:hover {
+    color: rgba(138, 199, 150, 0.8);
+    text-decoration: underline;
+
+}
+
+a:active {
+    color: rgba(32, 165, 59, 0.8);
+    
+}
+
+/* targets specific links in header and footer, placed below the universal "a" so this is applied since it's last */
+header a,
+footer a {
+    font-size: 35px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2, h3, h4 {
+    
+    text-decoration: underline;
+    padding: 15px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+ul, ol {
+    list-style-position: inside; /* this places the bullets/numbers inside the container */
+    padding: 0px 0px 20px;
+}
+
+li {
+    line-height: 25px;
+    font-size: 20px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 3px dashed rgb(89, 29, 145);
+}
+
+.cherry-blossoms {
+    background-image: url("images/cherry-blossoms-in-meguro.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /*covers the width of the page */
+}
+
+.wrapper {
+    /* next declarations center the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* so each element is on a new line */
+
+}
+
+.page-title {
+    color: black;
+    font-family: Helvetica, 'Times New Roman', Times, serif;
+    padding: 0px 20px;
+    background-color: rgba(155, 52, 105, 0.6); /* the last number defines the opacity which is why I choose rgba */
+    margin: 20px;
+}
+
+.break {
+    width: 100%;
+}
+
+.header-nav, .footer-nav {
+    word-spacing: 1em;
+}
+
+.header-nav {
+    padding: 20px;
+    font-size: 30px;
+    background-color: rgba(75, 12, 45, 0.8);
+    margin: 20px;
+}
+
+.all-sections {
+    text-align: center;
+    line-height: 50px;
+    margin: 30px;
+    padding: 20px;
+    background-color: #DEC8D5;
+}
+
+.section-intro, 
+.section-about,
+.section-contact {
+    width: 800px;
+    border: #000 3px solid;
+}
+
+.section-intro img,
+.section-about img {
+    border-radius: 20px; /*smooths the corners of the image */
+    width: 60%;
+
+}
+
+.caption {
+    padding: 0px 0px 10px 0px;
+    line-height: 0px;
+    font-family: Verdana, 'Geneva', Tahoma, sans-serif;
+}
+
+.bottom {
+    background-color: gray;
+}
+
+.credits, .credits a {
+    font-size: 25px;
+}

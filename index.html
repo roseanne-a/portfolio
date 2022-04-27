@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- An HTML document always starts with DOCTYPE html to let the browser know what version of HTML is used, in this case, HTML5 -->
+
+<html lang="en">
+<!-- This HTML element the HTML that displays the website and "lang" sets the primary language, in this case English. -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- "charset" lets the browser know the character set. UTF-8 covers most characters and symbols.  -->
+    <meta name="viewport" content="width=device-width">
+    <!-- This line of code adjusts the width of the page to the device that is viewing the page. -->
+    <title>Rosey with Thinkful</title>
+    <!-- This title shows up at the top of the browser and will be the name of the bookmark when bookmarked. -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+        type="text/css">
+    <!-- This line links to external css called normalize which displays HTML elements uniformly across different browsers. -->
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- These lines link to external css in the same folder, generally stylistic modifications. -->
+</head>
+<!-- The "head" element holds information that the browser and search engines need, like the title of the document and initialized css. -->
+
+
+<body>
+<!-- "body" contains the information that is displayed on the website. -->
+<!-- semantic containers such as header, main, etc are used to help SEO and for organization -->
+    <header class="cherry-blossoms" id="home">
+    <!-- "header" includes introductory elements like the page title, navigation, etc. -->
+        <div class="wrapper">
+        <!-- a wrapper class is used throughout the document to center the content. -->
+            <div class="page-title">
+                <h1>Rosey with Thinkful</h1>
+                <!-- h1 is only used once and contains the title of the page -->
+            </div>
+            <div class="break"></div>
+            <!-- a break is used to maintain the center position while putting the nav on a new line. -->
+            <nav>
+                <div class="header-nav">
+                    <a href="#home">Home</a>
+                    <a href="#intro">Introduction</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <!-- # is used to link to anchors throughout the page -->
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <article>
+                <section>
+                    <div class="all-sections section-intro" id="intro">
+                        <!-- multiple classes can be used, all-sections contains shared declarations, id is used to identify the beginning of each section -->
+                        <h2>Introduction</h2>
+                        <h3>Who am I?</h3>
+                        <p>
+                            My name is Roseanne Arcebido, but you can call me Rosey.
+                        </p>
+                        <h4>Three Facts</h4>
+                        <ol>
+                            <li>I was born in Miami.</li>
+                            <li>I lived in Japan for seven years.</li>
+                            <li>My favorite food is tacos.</li>
+                        </ol>
+                        <!-- ol stands for ordered list and uses numbers (or other organized elements) for list items (or li) -->
+                        <h3>Where am I located?</h3>
+                        <p>
+                            I am located in Florida, close to Disney World!
+                        </p>
+                        <img src="images/disney_world_castle.jpg"
+                            alt="A picture of Disney characters in front of Cinderella's castle.">
+                        <!-- 
+                        since the image is located on the same server, a relative link is used
+                        an alt is also used in case the link is broken, or for accessibility, or just for more information 
+                        -->
+                        <div class="caption">
+                            Donald Duck, Pluto, Mickey Mouse, Minnie Mouse, Daisy Duck and Goofy in front of
+                            Cinderella's castle.
+                        </div>
+                        <!-- the caption is smaller that regular text -->
+                    </div>
+                </section>
+
+                <hr>
+
+                <section>
+                    <div class="all-sections section-about" id="about">
+                        <h2>About</h2>
+                        <h3>Development History</h3>
+                        <p>
+                            My journey with web development began a long time ago... I think a lot of people my age will
+                            tell you this,
+                            but in fact, I started with HTML when <a
+                                href="https://en.wikipedia.org/wiki/Neopets" target="_blank">Neopets</a> was born!
+                            I was addicted to the site because it was fun to raise different monsters. If my memory
+                            serves me right,
+                            there was a profile page where you could design it as you please. They had a small guide,
+                            and I also searched
+                            various resources and got my hands metaphorically dirty! I enjoyed changing the background
+                            color and linking to
+                            images.
+                        </p>
+                        <p>
+                            The rest of way was supported by other websites like MySpace and Xanga where I kept playing
+                            around. As I grew older,
+                            I did small projects here and there. More recently, I tried developing simple Discord bots
+                            in Javascript and studied
+                            a bit of PHP for a KPOP web forum that I help with. And now I am ready to immerse myself
+                            completely!
+                        </p>
+                        <h3>Hobbies and Likes</h3>
+                        <p>
+                            I have 6 cats and love to play with them. I love video games, mainly Pokemon, and KPOP,
+                            mainly BTOB!
+                        </p>
+                        <h4>My Cats</h4>
+                        <ul>
+                            <li>Moon</li>
+                            <li>Peeky</li>
+                            <li>Chopper</li>
+                            <li>Athena</li>
+                            <li>Sage</li>
+                            <li>Gandalf</li>
+                            <li>Precious</li>
+                        </ul>
+                        <!-- this uses an unordered list where the order does not matter (I love all my cats equally!)-->
+                        <img src="images/two_white_cats.jpg" alt="Two of Rosey's cats, who are white.">
+                        <div class="caption">Two of my cats, Gandalf and Precious.</div>
+                    </div>
+                </section>
+
+                <hr>
+
+                <section>
+                    <div class="all-sections section-contact" id="contact">
+                        <h2>Contact</h2>
+                        <p><a href="https://github.com/roseanne-a" target="_blank">Github</a> | <a
+                                href="https://www.linkedin.com/in/rarcebido/" target="_blank">LinkedIn</a>
+                        </p>
+                        <!-- target blank is used to open links in a new page. It helps so the user doesn't leave your page! -->
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper bottom">
+            <nav>
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#intro">Introduction</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <!-- header-nav and footer-nav is used for different padding, font size, etc -->
+            </nav>
+            <div class="break"></div>
+            <div class="credits">
+                Photo by <a
+                    href="https://unsplash.com/@sorasagano?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    target="_blank">Sora
+                    Sagano</a> on <a
+                    href="https://unsplash.com/s/photos/cherry-blossom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+                    target="_blank">Unsplash</a>
+            </div>
+            <!-- credits are smaller to not distract the user, but must always be included -->
+        </div>
+    </footer>
+</body>
+
+</html>
